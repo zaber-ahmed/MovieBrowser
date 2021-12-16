@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="MovieBrowser" customModuleProvider="target">
+            <connections>
+                <outlet property="overview_text_view" destination="e1M-vP-LP8" id="ghx-jf-lPo"/>
+                <outlet property="poster_img_view" destination="wcG-6T-wy3" id="lPB-qL-dWE"/>
+                <outlet property="release_date_label" destination="eM1-ja-2tX" id="dmv-wX-xSB"/>
+                <outlet property="titleLabel" destination="AXE-t3-alM" id="dPN-1H-QNR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="US6-yW-nau"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcG-6T-wy3">
+                    <rect key="frame" x="20" y="266" width="184" height="324"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e1M-vP-LP8">
+                    <rect key="frame" x="224" y="266" width="184" height="324"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date: 12-12-2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM1-ja-2tX">
+                    <rect key="frame" x="20" y="216" width="388" height="40"/>
+                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="T3L-Cj-bCM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXE-t3-alM">
+                    <rect key="frame" x="20" y="171" width="388" height="40"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="e1M-vP-LP8" firstAttribute="top" secondItem="wcG-6T-wy3" secondAttribute="top" id="1EA-Kn-lrl"/>
+                <constraint firstItem="wcG-6T-wy3" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.43" id="5aI-AW-ZrM"/>
+                <constraint firstItem="eM1-ja-2tX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="8cg-kd-4aw"/>
+                <constraint firstItem="wcG-6T-wy3" firstAttribute="top" secondItem="eM1-ja-2tX" secondAttribute="bottom" constant="10" id="8js-m9-ln2"/>
+                <constraint firstItem="AXE-t3-alM" firstAttribute="leading" secondItem="eM1-ja-2tX" secondAttribute="leading" id="BQa-vi-25z"/>
+                <constraint firstItem="eM1-ja-2tX" firstAttribute="top" secondItem="AXE-t3-alM" secondAttribute="bottom" constant="5" id="Drv-cX-zsP"/>
+                <constraint firstItem="e1M-vP-LP8" firstAttribute="bottom" secondItem="wcG-6T-wy3" secondAttribute="bottom" id="N3q-Xk-gMq"/>
+                <constraint firstItem="AXE-t3-alM" firstAttribute="height" secondItem="eM1-ja-2tX" secondAttribute="height" id="NEA-ui-srD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="e1M-vP-LP8" secondAttribute="trailing" constant="20" id="UNO-ts-j0s"/>
+                <constraint firstItem="e1M-vP-LP8" firstAttribute="width" secondItem="wcG-6T-wy3" secondAttribute="width" id="UhJ-VU-Cfb"/>
+                <constraint firstItem="AXE-t3-alM" firstAttribute="trailing" secondItem="eM1-ja-2tX" secondAttribute="trailing" id="Z7M-MX-rO5"/>
+                <constraint firstItem="wcG-6T-wy3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="gRx-tb-3yV"/>
+                <constraint firstItem="wcG-6T-wy3" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.35" id="iFS-68-w84"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eM1-ja-2tX" secondAttribute="trailing" constant="20" id="uIR-gK-6sC"/>
+                <constraint firstItem="wcG-6T-wy3" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-40" id="xnU-Zk-shB"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="130.78817733990149"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
